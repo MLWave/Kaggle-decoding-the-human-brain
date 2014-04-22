@@ -1,0 +1,10 @@
+Author: Triskelion <info@mlwave.com>
+Credit: Zygmunt Zając <zygmunt@fastml.com>
+
+Training:
+
+./vw face.train.vw -c -k --passes 60 --loss_function hinge --binary -f face.model.vw
+
+Testing:
+
+./vw face.test.vw -t -i face.model.vw -p face.preds.txt
